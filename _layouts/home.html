@@ -1,0 +1,16 @@
+{% extends "_base.html" %}
+{% block body %}
+    <nav>
+    {% for item in this.content %}
+        <a href="{{item.url}}">{{item.title}}</a>
+        <p>{{item.abstract}}</p>
+    {% endfor %}
+    </nav>
+
+    <main class="container-fluid">
+        {{this.body}}
+    </main>
+
+    {% include "footer.html" %}
+
+{% endblock %}

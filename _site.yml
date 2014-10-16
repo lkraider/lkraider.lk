@@ -1,0 +1,7 @@
+reflinks:
+    content_license:
+        url: http://creativecommons.org/licenses/by-sa/4.0/
+        title: CC-BY-SA License
+    software_license:
+        url: http://opensource.org/licenses/MIT
+        title: MIT License
