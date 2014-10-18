@@ -7,5 +7,9 @@ serve:
 	python -m urubu serve
 
 publish: build
-	$(info !! Commit '_build' and then call 'version release')
+	git diff-index --quiet HEAD -- ;\
+	if [ $$? -eq 0 ] ;\
+	    then version release -r patch master draft;\
+	else echo " -> Commit all changes first";\
+	fi
 
