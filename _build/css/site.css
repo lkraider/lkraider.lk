@@ -1,0 +1,39 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  color: #333;
+}
+
+a {
+  color: #428bca;
+  text-decoration: none;
+  background: transparent;
+}
+a:hover,
+a:focus {
+  color: #2a6496;
+  text-decoration: underline;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+main {
+  text-align: center;
+}
+
+footer {
+  margin-top: 30px;
+  padding-top: 16px;
+  color: #777;
+  border-top: 1px solid #eee;
+  font-size: 90%;
+  text-align: center;
+}
+footer p {
+  margin: 0;
+}
