@@ -7,9 +7,8 @@ serve:
 	python -m urubu serve
 
 publish: build
-	git diff-index --quiet HEAD -- ;\
-	if [ $$? -eq 0 ] ;\
+	if [[ -z $$(git status -s) ]];\
 	    then version release -r patch master draft;\
-	else echo " -> Commit all changes first";\
+	else\
+	    echo " -> Commit all changes first";\
 	fi
-
