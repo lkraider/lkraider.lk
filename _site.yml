@@ -9,3 +9,4 @@ ignore_patterns:
   - requirements.txt
 keep_files:
   - .htaccess
+  - apps/pass/.htaccess
