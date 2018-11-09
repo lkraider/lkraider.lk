@@ -5,3 +5,7 @@ reflinks:
     software_license:
         url: http://opensource.org/licenses/MIT
         title: MIT License
+ignore_patterns:
+  - requirements.txt
+keep_files:
+  - .htaccess
